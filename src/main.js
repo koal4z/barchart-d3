@@ -3,13 +3,12 @@ const getData = async () => {
     'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json'
   );
   const datas = await res.json();
-  const { column_names, data, description, name } = await datas;
-  return { column_names, data, description, name };
+  const { data } = await datas;
+  return { data };
 };
 
 const run = async () => {
-  const { column_names, data, description, name } = await getData();
-  console.log({ column_names, data, description, name });
+  const { data } = await getData();
   const w = 1000;
   const h = 600;
   const padding = 20;
