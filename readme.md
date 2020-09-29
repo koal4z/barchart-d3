@@ -2,4 +2,4 @@
 
 ### learn with freecodecamp
 
-demo is comming soon...
+[demo](https://barchart-d3-koal4z.netlify.app)
